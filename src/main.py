@@ -31,21 +31,8 @@ class VentanaPrincipal(ttk.Window):
             frame.pack_forget()
         self.frames[nombre_vista].pack(fill="both", expand=True)
 
-    def agregar_al_carrito(self, producto):
-        """Agregar un producto al carrito."""
-        self.carrito.append(producto)
-        print(f"Producto agregado al carrito: {producto['nombreProducto']}")
 
-    def eliminar_del_carrito(self, producto):
-        """Eliminar un producto del carrito."""
-        if producto in self.carrito:
-            self.carrito.remove(producto)
-            print(f"Producto eliminado del carrito: {producto['nombreProducto']}")
 
-    def limpiar_carrito(self):
-        """Limpiar el carrito de compras."""
-        self.carrito = []
-        print("Carrito limpiado.")
 
 def main():
     app = VentanaPrincipal()

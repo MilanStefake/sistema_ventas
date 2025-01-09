@@ -29,7 +29,7 @@ class AlimentosAgricolasView(ttk.Frame):
         )
 
         # Título
-        label = ttk.Label(self.frame, text="Productos Agrícolas", font=("Helvetica", int(16 * factor)))
+        label = ttk.Label(self.frame, text="Alimento De Animales", font=("Helvetica", int(16 * factor)))
         label.grid(row=0, column=0, pady=(int(20 * factor), int(10 * factor)), columnspan=3)
 
         # Cargar productos desde el archivo JSON
@@ -42,8 +42,7 @@ class AlimentosAgricolasView(ttk.Frame):
             btn_text = f"{nombre} {precio}"
 
             # Crear el botón con el mismo color de fondo que los del MainView
-            btn = ttk.Button(self.frame, text=btn_text, bootstyle="primary", width=int(30 * factor), 
-                             command=lambda p=producto: self.agregar_al_carrito(p))
+            btn = ttk.Button(self.frame, text=btn_text, bootstyle="primary", width=int(30 * factor))
 
             # Organizar los botones en 3 columnas
             row = (i // 3) + 1  # Calculamos la fila
@@ -81,7 +80,7 @@ class AlimentosAgricolasView(ttk.Frame):
         self.master.state('normal')  # Asegurarse de que la ventana esté en modo ventana
         self.master.attributes('-fullscreen', True)  # Activar pantalla completa con bordes
         self.master.geometry("1920x1080")  # Establecer un tamaño predeterminado de ventana (ajustable)
-        self.master.resizable(True, True)  # Hacer la ventana redimensionable
+        self.master.resizable(True, True)  # Hacer la ventana redimensionablecle
 
     def cargar_productos(self):
         """Cargar productos desde un archivo JSON"""
@@ -91,15 +90,3 @@ class AlimentosAgricolasView(ttk.Frame):
         except Exception as e:
             print(f"Error al cargar productos: {e}")
             return []
-
-    def agregar_al_carrito(self, producto):
-        """Agregar producto al carrito y habilitar el botón 'Finalizar Compra'"""
-        self.controller.frames["MainView"].agregar_al_carrito(producto)
-        print(f"Producto agregado al carrito: {producto['nombreProducto']}")
-
-    def finalizar_compra(self):
-        """Si el carrito tiene productos, mostrar la vista de finalizar compra"""
-        if self.controller.frames["MainView"].carrito:
-            self.controller.mostrar_vista("FinalizarCompraView")
-        else:
-            print("El carrito está vacío. No se puede finalizar la compra.")
