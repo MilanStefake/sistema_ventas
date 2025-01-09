@@ -1,0 +1,102 @@
+[
+    {
+        "nombreProducto": "AGUA MINERAL 600cc",
+        "precio": " $1,000 "
+    },
+    {
+        "nombreProducto": "COCA COLA 3L",
+        "precio": " $3,000 "
+    },
+    {
+        "nombreProducto": "COCA COLA 591cc",
+        "precio": " $1,200 "
+    },
+    {
+        "nombreProducto": "COCA COLA LATA 350cc",
+        "precio": " $1,000 "
+    },
+    {
+        "nombreProducto": "AGUA MINERAL 1.6cc",
+        "precio": " $1,500 "
+    },
+    {
+        "nombreProducto": "PAPAYA ALMIBAR ",
+        "precio": " $6,500 "
+    },
+    {
+        "nombreProducto": "PAPAYA STEVIA ",
+        "precio": " $7,500 "
+    },
+    {
+        "nombreProducto": "CASTAÑAS ALMIBAR",
+        "precio": " $8,500 "
+    },
+    {
+        "nombreProducto": "PURE CASTAÑAS",
+        "precio": " $8,500 "
+    },
+    {
+        "nombreProducto": "MERMELADA VARIEDADES",
+        "precio": " $7,500 "
+    },
+    {
+        "nombreProducto": "MERMELADA DE MORA",
+        "precio": " $8,500 "
+    },
+    {
+        "nombreProducto": "MERMELADA PAPAYA PEQUEÑA",
+        "precio": " $5,500 "
+    },
+    {
+        "nombreProducto": "SUPER 8",
+        "precio": " $400 "
+    },
+    {
+        "nombreProducto": "CHUBI",
+        "precio": " $400 "
+    },
+    {
+        "nombreProducto": "MENTAS",
+        "precio": " $300 "
+    },
+    {
+        "nombreProducto": "FULL",
+        "precio": " $300 "
+    },
+    {
+        "nombreProducto": "CEREAL BAR",
+        "precio": " $300 "
+    },
+    {
+        "nombreProducto": "SAHNE NUSS",
+        "precio": " $500 "
+    },
+    {
+        "nombreProducto": "TRENCITO",
+        "precio": " $500 "
+    },
+    {
+        "nombreProducto": "CHOKITA",
+        "precio": " $500 "
+    },
+    {
+        "nombreProducto": "PAPAS LAYS",
+        "precio": " $800 "
+    },
+    {
+        "nombreProducto": "DE TODITO",
+        "precio": " $800 "
+    },
+    {
+        "nombreProducto": "TUAREG",
+        "precio": " $400 "
+    },
+    {
+        "nombreProducto": "DINDON",
+        "precio": " $400 "
+    },
+    {
+        "nombreProducto": "NESCAFE SOBRE",
+        "precio": " $250 "
+    }
+]
